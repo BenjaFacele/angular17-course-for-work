@@ -1,11 +1,12 @@
+import { ProductBemModule } from './product-bem/product-bem.module';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { ProductModule } from './product/product.module';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [CommonModule, ProductModule, ProductBemModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
